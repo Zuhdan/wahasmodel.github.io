@@ -1,1 +1,370 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="csrf-token" content="5wouX7aIGd0gjBvn46WnKP43PKZ0x0SKAw7Cn0Mx">
+
+    <title>SMA Wahas Model</title>
+    <link rel="icon" href="http://www.smawahasmodel.sch.id/images/standar/logo.png">
+    <!-- Lato Font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheet -->
+    <link href="http://www.smawahasmodel.sch.id/materialize/css/gallery-materialize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style type="text/css">
+      .typed-cursor{
+        opacity: 1;
+        animation: typedjsBlink 0.7s infinite;
+        -webkit-animation: typedjsBlink 0.7s infinite;
+        animation: typedjsBlink 0.7s infinite;
+      }
+      
+      @media  only screen and (max-width: 600px) {
+        .tagline{
+          line-height: 20px;
+          position: absolute;
+          width: 100%;
+          top: 210px;
+        }
+      }
+      @keyframes  typedjsBlink{
+        50% { opacity: 0.0; }
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="http://www.smawahasmodel.sch.id/css/event.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navbar and Header -->
+    <nav class="nav-extended ">
+      <div class="nav-background">
+        
+        
+        <div class="pattern active" style="background-image: url('http://www.smawahasmodel.sch.id/images/standar/banner1.jpg'); "></div>
+      </div>
+      <div class="nav-wrapper container">
+        <a href="http://www.smawahasmodel.sch.id" class="brand-logo"><img src="http://www.smawahasmodel.sch.id/images/standar/logo-text.png" style="width: 180px; margin-top: 10px" ></a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="http://www.smawahasmodel.sch.id">Beranda</a></li>
+          <li><a href="http://www.smawahasmodel.sch.id/daftar">Daftar Online</a></li>
+          <li><a href="http://www.smawahasmodel.sch.id/profil">Profil</a></li>
+          <li><a href="http://www.smawahasmodel.sch.id/tenaga-pengajar">Tenaga Pengajar</a></li>
+          <li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Login<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+        <!-- Dropdown Structure -->
+        <ul id='feature-dropdown' class='dropdown-content'>
+          <li><a href="http://www.smawahasmodel.sch.id/siswa">Siswa</a></li>
+          <li><a href="http://www.smawahasmodel.sch.id/pengajar">Guru</a></li>
+        </ul>
+
+        <div class="nav-header">
+  <div class=" center">
+  <h1>Selamat Datang </h1>
+  <div class="tagline">Mengutamakan <span class="element"></span> </div>
+  </div>
+</div>
+
+      </div>
+
+      <!-- Fixed Masonry Filters -->
+      <div class="categories-wrapper blue darken-3">
+  <div class="categories-container">
+    <ul class="container categories">
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/prestasi">Prestasi</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/fasilitas">Fasilitas</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/galeri">Galeri</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/blog">Artikel</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/pengumuman">Pengumuman</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/agenda">Agenda</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/ekstrakurikuler">Organisasi</a></li>
+      
+    </ul>
+  </div>
+</div>
+      
+    </nav>
+    <ul class="side-nav" id="nav-mobile">
+      <li class="active"><a href="http://www.smawahasmodel.sch.id"><i class="material-icons">camera</i>Home</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/daftar"><i class="material-icons">brightness_3</i>Daftar Online</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/profil"><i class="material-icons">edit</i>Profil Sekolah</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/tenaga-pengajar"><i class="material-icons">school</i>Tenaga Pengajar</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/siswa"><i class="material-icons">fullscreen</i>Login Siswa</a></li>
+      <li><a href="http://www.smawahasmodel.sch.id/pengajar"><i class="material-icons">swap_horiz</i>Login Pengajar</a></li>
+    </ul>
+
+    <br>
+    
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="medium material-icons">flash_on</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="medium material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="medium material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <div class="parallax-container valign-wrapper" style="height: 200px;">
+      <div class="container">
+        <div class="row center">
+          <h4>Visi</h4>
+          <p style="font-size: 20px;">
+                          Terbentuknya peserta didik yang unggul dalam prestasi, luhur budi pekerti berlandaskan iman dan taqwa <br>
+<h5>Indikator</h5>
+
+Unggul dalam pengembangan Sains,Teknologi,Seni,Olahraga dan Imtaq. Kompeten dalam Vocational Skill dan Society Skill. Berdaya saing dalam memasuki pendidikan tinggi, dunia kerja maupun berperan aktif dalam kehidupan masyarakat.
+                      </p>
+        </div>
+      </div>
+    <div class="parallax"><img src="http://www.smawahasmodel.sch.id/images/standar/background1.png" alt="Unsplashed background img 2"></div>
+  </div>
+  
+<div id="portfolio" class="section gray">
+  <div class="container">
+    <div class="gallery row">
+      <div class="gallery-item gallery-expand gallery-filter artikel active">
+        <div class="col s12 m8">
+                                
+        </div>
+        <div class="col s12 m4">
+
+                            <div class="row">
+            <div class="col s4">
+              <div class="date">
+                <span class="binds"></span>
+                <span class="month">Agustus</span>
+                <h1 class="day">18</h1>
+              </div>
+            </div>
+            <div class="col s8">
+              <b>Class Meeting</b><br>
+              Di ikuti oleh semua kelas.
+Lokasi : SMA WAHID HASYIM MODEL
+            </div>
+          </div>
+                    <div class="row">
+            <div class="col s4">
+              <div class="date">
+                <span class="binds"></span>
+                <span class="month">September</span>
+                <h1 class="day">20</h1>
+              </div>
+            </div>
+            <div class="col s8">
+              <b>Pemilihan Ketua OSIS</b><br>
+              Sasaran : Seluruh Siswa dan Guru. Lokasi    : SMA WAHID HASYIM MODEL;
+            </div>
+          </div>
+                    <div class="row">
+            <div class="col s4">
+              <div class="date">
+                <span class="binds"></span>
+                <span class="month">Agustus</span>
+                <h1 class="day">20</h1>
+              </div>
+            </div>
+            <div class="col s8">
+              <b>Santunan anak yatim/piatu</b><br>
+              Sasaran : Siswa MI dan SMP.
+Lokasi : SMA WAHID HASYIM MODEL
+            </div>
+          </div>
+                    <div class="row">
+            <div class="col s4">
+              <div class="date">
+                <span class="binds"></span>
+                <span class="month">September</span>
+                <h1 class="day">27</h1>
+              </div>
+            </div>
+            <div class="col s8">
+              <b>LDKMS</b><br>
+              Untuk pengurus OSIS yang terpilih, Kegiatan dilaksanakan di Vila Pacet Mojokerto
+            </div>
+          </div>
+                    <div class="row">
+            <div class="col s4">
+              <div class="date">
+                <span class="binds"></span>
+                <span class="month">Oktober</span>
+                <h1 class="day">01</h1>
+              </div>
+            </div>
+            <div class="col s8">
+              <b>PTS (Penilaian Tengah Semester)</b><br>
+              Untuk kelas X, XI, XII
+            </div>
+          </div>
+                     
+        </div>
+
+      </div>
+
+  </div>
+
+  </div>
+</div>
+
+  <div class="parallax-container valign-wrapper" style="height: 300px;">
+      <div class="container">
+        <div class="row center">
+          <h4>Misi</h4>
+        </div>
+                <ol>
+  <li>Mengembangkan masyarakat terdidik yang menguasai ilmu dan teknologi yang diterapkan berdasarkan ajaran Ahlussunah Waljama&#39;ah.</li>
+  <li>Mengembangkan siswa berbudaya yang mampu beradaptasi dengan lingkungan sekitarnya.</li>
+  <li>mengembangkan masyarakat yang berakhlaqul karimah sesuai dengan ajaran Ahlussunah Waljama&#39;ah.</li>
+  <li>Mengembangkan siswa&nbsp;yang menguasai, dan MISI menerapkan ajaran agama secara konsisten berdasarkan ajaran Ahlussunah Waljama&#39;ah.</li>
+  <li>Mengembangkan kebijakan fiskal yang sehat, terpecaya, transparan, dan bertanggung jawab.</li>
+  <li>Mengembangkan manajemen pendidikan yang selalu memperhatikan aspirasi warga sekolah dan masyarakat dengan memperhatikan perkembangan ilmu pengetahuan, teknologi, serta menerapkan manajemen yang transparan, bertanggungjawab, dan konsisten dalam melakukan kebijakan.</li>
+</ol>
+              </div>
+    <div class="parallax"><img src="http://www.smawahasmodel.sch.id/images/standar/background1.png" alt="Unsplashed background img 2"></div>
+  </div>
+
+<div id="portfolio" class="section ">
+  <div class="container">
+  <div class="row">
+      
+      <div class="col m6 s12">
+        <div class="icon-block">
+            <h2 class="center light-blue-text">A</h2>
+            <h5 class="center">Status Akriditasi</h5>
+                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                    </div>
+      </div>
+      <div class="col m6 s12">
+      <form action="http://www.smawahasmodel.sch.id/masukkan" method="post">
+      <input type="hidden" name="_token" value="5wouX7aIGd0gjBvn46WnKP43PKZ0x0SKAw7Cn0Mx">
+        <div class="input-field">
+          <input id="nama" type="text" class="validate" name="nama" value="" required>
+          <label for="first_name">Nama</label>
+        </div>
+        <div class="input-field">
+          <input id="hp" type="number" class="validate" name="hp" value="" required>
+          <label for="first_name">Nomor HP</label>
+        </div>
+        <div class="input-field">
+          <input id="email" type="email" class="validate" name="email" value="" required>
+          <label for="first_name">Email</label>
+        </div>
+        <div class="input-field">
+          <textarea class="materialize-textarea" name="pesan"></textarea>
+          <label for="first_name">Pesan Masukkan saran</label>
+        </div>
+        <div class="input-field">
+          <button class="btn light-blue darken-3 col s12" type="submit">Kirim Saran
+              <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+
+      </div>
+  </div>
+</div>
+<br><br>
+</div>
+
+<div class="row">
+   <iframe class="col m12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.063311765788!2d112.36301711289758!3d-7.001827132012364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77eef684f76623%3A0xb565de9c7fe5500e!2sSMA+Wahid+Hasyim+Model!5e0!3m2!1sid!2sid!4v1532057268572" width="800" height="300" frameborder="0" style="border:0"></iframe>
+</div>
+
+    <footer class="page-footer light-blue darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">SMA Wahid Hasyim Model</h5>
+            <p class="grey-text text-lighten-4">Menebar Aksi Kreasi dan Prestasi</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Address</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Sumberwudi Karanggeneng Lamongan (62254)</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Telp. 912819219</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">@email. smawahasmodel@gmail.com</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2018 Copyright Ownner21
+        <a class="grey-text text-lighten-4 right" href="http://www.smawahasmodel.sch.id/daftar">PMB Wahas</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Core Javascript -->
+    <script src="http://www.smawahasmodel.sch.id/materialize/js/jquery.min.js"></script>
+    <script src="http://www.smawahasmodel.sch.id/materialize/js/imagesloaded.pkgd.min.js"></script>
+    <script src="http://www.smawahasmodel.sch.id/materialize/js/masonry.pkgd.min.js"></script>
+    <script src="http://www.smawahasmodel.sch.id/materialize/js/materialize.min.js"></script>
+    <script src="http://www.smawahasmodel.sch.id/materialize/js/color-thief.min.js"></script>
+    <script src="http://www.smawahasmodel.sch.id/materialize/js/galleryExpand.js"></script>
+    <script src="http://www.smawahasmodel.sch.id/materialize/js/init.js"></script>
+    
+    <script type="text/javascript" src="http://www.smawahasmodel.sch.id/js/typed.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+   document.addEventListener("DOMContentLoaded", function() {
+          new Typed('.element', {
+          cursorChar: '|',
+          strings: ["Menciptakan Dunia dalam Genggaman.", "Membantu dan Menghubungkan Guru dan Siswa", "Memudahkan Pengawasan Perkembangan Siswa"],
+          startDelay: 1000,
+          showCursor: true,
+          autoInsertCss: true,
+          backDelay: 2000,
+          typeSpeed: 100,
+          backSpeed: 20,
+          // smartBackspace: false, // this is a default
+          loop: true
+        });
+    });
+</script>
+  </body>
+</html>
